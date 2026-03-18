@@ -1,0 +1,204 @@
+/* ============================================================
+   CONFIGURAÇÃO DE CORES E VARIÁVEIS
+   ============================================================ */
+
+/* Cores padrão (Modo Claro) */
+:root {
+    --bg-color: #ffffff;          /* Fundo da página */
+    --text-color: #333333;        /* Cor do texto principal */
+    --nav-bg: #f8f9fa;            /* Fundo do menu */
+    --primary-color: #6c63ff;     /* Cor de destaque (roxo) */
+    --card-bg: #fdfdfd;           /* Fundo dos cards de projeto */
+    --border-color: #dddddd;      /* Cor das bordas */
+}
+
+/* Cores quando o modo DARK estiver ativo */
+.dark-theme {
+    --bg-color: #121212;          /* Fundo preto/cinza escuro */
+    --text-color: #e0e0e0;        /* Texto cinza claro */
+    --nav-bg: #1f1f1f;            /* Menu mais escuro que o fundo */
+    --card-bg: #1e1e1e;           /* Cards em destaque no escuro */
+    --border-color: #333333;      /* Bordas sutis */
+}
+
+/* ============================================================
+   APLICAÇÃO DAS VARIÁVEIS (ESSENCIAL)
+   ============================================================ */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Transição suave ao trocar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-links a {
+    color: var(--text-color);
+}
+
+.card, .project-card, .contato-form {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+input, textarea {
+    background-color: var(--bg-color); /* Faz o campo acompanhar o tema */
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+#theme-toggle {
+    background: none;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    transition: 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--nav-bg);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.nav-links a.active { color: var(--primary-color); }
+
+/* Conteúdo Principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Formulário de Contato */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#submit-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* Estilização específica do Formulário */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--nav-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+#submit-btn {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: filter 0.2s;
+}
+
+#submit-btn:hover {
+    filter: brightness(1.2);
+}
+.card, .project-card {
+    background: var(--nav-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333; /* Mantém legível mesmo no modo escuro */
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
