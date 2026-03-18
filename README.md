@@ -4,8 +4,8 @@ Este projeto consiste no desenvolvimento de um portfólio online pessoal, realiz
 
 ## 🚀 Link do Projeto
 Você pode acessar o site publicado aqui: 
-👉 **[INSIRA O LINK DO SEU GITHUB PAGES AQUI]** 
-*(Exemplo: https://seu-usuario.github.io/nome-do-repositorio/)* 
+👉 **https://primarques1.github.io/portfolio/** 
+
 
 ---
 
@@ -22,7 +22,7 @@ O desenvolvimento seguiu as diretrizes obrigatórias da instituição:
 ## 💻 Seções do Portfólio
 1.  **Sobre mim:** Apresentação pessoal, hobbies e trajetória profissional.
 2.  **Formação:** Detalhes sobre a graduação em Publicidade e Propaganda e o atual curso de Engenharia de Software.
-3.  **Portfólio:** Exposição de projetos realizados (incluindo trabalhos da Photolith).
+3.  **Portfólio:** Exposição de projetos realizados.
 4.  **Contato:** Formulário com validação de campos e simulação de envio via JavaScript.
 
 ---
