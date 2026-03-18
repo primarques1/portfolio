@@ -2,7 +2,7 @@
 
 Este projeto consiste no desenvolvimento de um portfólio online pessoal, realizado como atividade prática para a disciplina de **Aplicações Web e Móveis**. O objetivo é aplicar conceitos fundamentais de desenvolvimento front-end sem o uso de frameworks. 
 
-## 🚀 Link do Projetos
+## 🚀 Link do Projeto
 Você pode acessar o site publicado aqui: 
 👉 **https://primarques1.github.io/portfolio/** 
 
