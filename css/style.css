@@ -131,7 +131,7 @@ button#submit-btn {
     cursor: pointer;
 }
 /* Estilização específica do Formulário */
-.contato-form {
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 20px;
