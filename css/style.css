@@ -4,31 +4,44 @@
 
 /* Cores padrão (Modo Claro) */
 :root {
-    --bg-color: #ffffff;          /* Fundo da página */
-    --text-color: #333333;        /* Cor do texto principal */
-    --nav-bg: #f8f9fa;            /* Fundo do menu */
-    --primary-color: #6c63ff;     /* Cor de destaque (roxo) */
-    --card-bg: #fdfdfd;           /* Fundo dos cards de projeto */
-    --border-color: #dddddd;      /* Cor das bordas */
+    --bg-color: #ffffff;
+    /* Fundo da página */
+    --text-color: #333333;
+    /* Cor do texto principal */
+    --nav-bg: #f8f9fa;
+    /* Fundo do menu */
+    --primary-color: #6c63ff;
+    /* Cor de destaque (roxo) */
+    --card-bg: #fdfdfd;
+    /* Fundo dos cards de projeto */
+    --border-color: #dddddd;
+    /* Cor das bordas */
 }
 
 /* Cores quando o modo DARK estiver ativo */
 .dark-theme {
-    --bg-color: #121212;          /* Fundo preto/cinza escuro */
-    --text-color: #e0e0e0;        /* Texto cinza claro */
-    --nav-bg: #1f1f1f;            /* Menu mais escuro que o fundo */
-    --card-bg: #1e1e1e;           /* Cards em destaque no escuro */
-    --border-color: #333333;      /* Bordas sutis */
+    --bg-color: #121212;
+    /* Fundo preto/cinza escuro */
+    --text-color: #e0e0e0;
+    /* Texto cinza claro */
+    --nav-bg: #1f1f1f;
+    /* Menu mais escuro que o fundo */
+    --card-bg: #1e1e1e;
+    /* Cards em destaque no escuro */
+    --border-color: #333333;
+    /* Bordas sutis */
 }
 
 /* ============================================================
    APLICAÇÃO DAS VARIÁVEIS (ESSENCIAL)
    ============================================================ */
 
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s; /* Transição suave ao trocar */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transição suave ao trocar */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 }
@@ -38,18 +51,27 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+.navbar .logo {
+    width: 300px;
+    height: 150px;
+}
+
 .nav-links a {
     color: var(--text-color);
 }
 
-.card, .project-card, .contato-form {
+.card,
+.project-card,
+.contato-form {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     color: var(--text-color);
 }
 
-input, textarea {
-    background-color: var(--bg-color); /* Faz o campo acompanhar o tema */
+input,
+textarea {
+    background-color: var(--bg-color);
+    /* Faz o campo acompanhar o tema */
     color: var(--text-color);
     border: 1px solid var(--border-color);
 }
@@ -69,6 +91,7 @@ input, textarea {
     background-color: var(--primary-color);
     color: white;
 }
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--bg-color);
@@ -86,7 +109,7 @@ body {
     padding: 1rem;
     position: sticky;
     top: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
@@ -101,7 +124,9 @@ body {
     font-weight: bold;
 }
 
-.nav-links a.active { color: var(--primary-color); }
+.nav-links a.active {
+    color: var(--primary-color);
+}
 
 /* Conteúdo Principal */
 .container {
@@ -117,7 +142,8 @@ body {
     flex-direction: column;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -130,6 +156,7 @@ button#submit-btn {
     padding: 10px 20px;
     cursor: pointer;
 }
+
 /* Estilização específica do Formulário */
 .formulario {
     display: flex;
@@ -138,7 +165,7 @@ button#submit-btn {
     background: var(--nav-bg);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .form-group label {
@@ -146,7 +173,8 @@ button#submit-btn {
     font-weight: 600;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -156,7 +184,8 @@ input, textarea {
     transition: border-color 0.3s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-color: var(--primary-color);
 }
@@ -174,7 +203,9 @@ input:focus, textarea:focus {
 #submit-btn:hover {
     filter: brightness(1.2);
 }
-.card, .project-card {
+
+.card,
+.project-card {
     background: var(--nav-bg);
     padding: 20px;
     margin-bottom: 20px;
@@ -194,7 +225,8 @@ input:focus, textarea:focus {
     background: #e9ecef;
     padding: 10px;
     border-radius: 5px;
-    color: #333; /* Mantém legível mesmo no modo escuro */
+    color: #333;
+    /* Mantém legível mesmo no modo escuro */
 }
 
 .project-grid {
