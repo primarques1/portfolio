@@ -1,8 +1,22 @@
-// 1. Alternar Tema (Claro/Escuro)
+// Seleciona o botão
 const themeBtn = document.getElementById('theme-toggle');
+
+// 1. Verificação imediata: Ao carregar a página, checa se o modo escuro estava ativo
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-theme');
+}
+
+// 2. Lógica do Clique
 themeBtn.addEventListener('click', () => {
+    // Alterna a classe no body
     document.body.classList.toggle('dark-theme');
-    // Comentário: Salva a preferência ou apenas troca a classe visual
+    
+    // Verifica se a classe foi adicionada ou removida para salvar a preferência
+    if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 });
 
 // 2. Validação do Formulário de Contato
