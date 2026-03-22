@@ -40,6 +40,7 @@ Para atender aos critérios de avaliação, foram implementadas as seguintes fun
 * **Nome:** Priscilla Regina Marques
 * **Curso:** Engenharia de Software
 * **Instituição:** UNINTER
+* **Instituição:** UNINTER
 
 ---
 *Este projeto foi desenvolvido para fins acadêmicos.*
